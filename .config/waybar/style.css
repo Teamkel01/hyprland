@@ -1,27 +1,29 @@
+@import "colors.css";
+
 window#waybar {
     background: transparent;
-    color: #ffffff;
+    color: @foreground;
     font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
     font-weight: 600;
 }
 
 .modules-left {
-    background: #000000;
+    background: @background;
     padding: 5px 10px;
     margin-left: 5px;
     margin-top: 5;
     border-radius: 25px;
 }
 .modules-right {
-    background: #000000;
+    background: @background;
     padding: 5px 10px;
     margin-right: 5px;
     margin-top: 5;
     border-radius: 25px;
 }
 .modules-center {
-    background: #000000;
+    background: @background;
     padding: 5px 15px;
     margin-top: 5;
     border-radius: 25px;
@@ -34,7 +36,7 @@ window#waybar {
 }
 
 #workspaces button {
-    color: #ffffff;
+    color: @foreground;
     background: transparent;
     border: none;
     padding: 0px 10px;
@@ -44,8 +46,8 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: #ffffff;
-    color: #000000;
+    background: @foreground;
+    color: @background;
     padding: 0px 25px;
 }
 
